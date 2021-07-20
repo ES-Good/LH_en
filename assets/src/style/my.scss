@@ -31,7 +31,7 @@ body{
         &::after{
             content: '';
             position: absolute;
-            width: 10%;
+            width: 40%;
             background-color: $red;
             height: 2px;
             left: 50%;
@@ -50,8 +50,7 @@ body{
     background-repeat: no-repeat;
     background-image: url(../img/s-top/bg.png);
     background-size: cover;
-    padding-bottom: 115px;
-    background-position-y: -300px;
+    padding-bottom: 30px;
 }
 
 .bg-trap-and-option{
@@ -77,13 +76,22 @@ body{
 }
 
 .s-top{
-    padding-top: 100px;
+    padding-top: 50px;
     &__text-line{
-        background-repeat: no-repeat;
-        background-image: url(../img/text-line.png);
-        background-position-x:center;
-        background-position-y: bottom;
-        background-size: contain;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -5px;
+            width: 85%;
+            height: 5px;
+            background-repeat: no-repeat;
+            background-image: url(../img/text-line.png);
+            background-position-x:center;
+            background-position-y: bottom;
+            background-size: contain;
+        }
     }
 
     &_img-des{
@@ -231,7 +239,7 @@ body{
 }
 
 .s-trap{
-    margin-top: 300px;
+    margin-top: 250px;
     margin-bottom: 35vw;
 
     &__text{
@@ -257,7 +265,7 @@ body{
     }
     &__mobile-img{
         z-index: 1;
-        margin-top: -220px;
+        margin-top: -135px;
         max-width: 400px;
         width: 100%;
     }
@@ -272,7 +280,7 @@ body{
     }
 
     &__box-ico{
-        max-width: 460px;
+        max-width: 200px;
         width: 100%;
         height: 200px;
 
@@ -296,9 +304,10 @@ body{
 .s-plan{
     .title_line-bottom{
         &::after{
-            left: 0;
-            width: 20%;
-            transform: none;
+            left: 50%;
+            width: 40%;
+            transform: translateX(-50%);
+            background-color: #fff;
         }
     }
 
@@ -334,6 +343,7 @@ body{
     &__mobile-container{
         background-color: $red;
         padding-bottom: 200px;
+
     }
 
     &__text-mobile{
@@ -343,6 +353,11 @@ body{
 }
 
 .s-cases{
+    &{
+        &_mt{
+            margin-top: -70px;
+        }
+    }
     &__img-box{
         border: 5px solid #3E425A;
         border-radius: 5px;
@@ -423,6 +438,11 @@ body{
 
 .footer{
     position: relative;
+    
+    &_mt{
+        margin-top: 14vw;
+    }
+
     &::after,
     &::before{
         left: 50%;
@@ -452,6 +472,7 @@ body{
         border-radius: 30px;
         position: relative;
         z-index: 3;
+        padding: 70px 0;
     }
 
 

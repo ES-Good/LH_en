@@ -133,6 +133,7 @@ $w-container: 1600px;
                 left: 0;
                 width: 20%;
                 transform: none;
+                background-color: $red;
             }
         }
     
@@ -172,6 +173,7 @@ $w-container: 1600px;
         &__text-mobile{
             color: #B9BDD8;
         }
+        
     }
     .s-logo-line{
         &__text{
@@ -301,6 +303,9 @@ $w-container: 1600px;
             }
         }
     }
+    .s-quiz__answers-box {
+        width: 1170px;
+    }
 }
 
 @media(min-width:1400px){
@@ -407,6 +412,10 @@ $w-container: 1600px;
     }
     .form_radio_btn{
         max-width: 300px;
+    }
+
+    .s-quiz__answers-box {
+        width: 1330px;
     }
 }
 
